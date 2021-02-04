@@ -1,13 +1,13 @@
-#import "SurvicateBindings.h"
-@import Survicate;
 
-@implementation SurvicateBindings
+@import Survicate;
+#import "RNReactNativeSurvicate.h"
+
+@implementation RNReactNativeSurvicate
 
 - (dispatch_queue_t)methodQueue
 {
     return dispatch_get_main_queue();
 }
-
 RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(enterScreen:(NSString *)screenName)
@@ -46,3 +46,4 @@ RCT_EXPORT_METHOD(reset)
 }
 
 @end
+  
